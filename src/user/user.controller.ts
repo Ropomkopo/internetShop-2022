@@ -7,8 +7,8 @@ import { UserService } from './user.service';
 export class UserController {
   constructor(private readonly userService: UserService) {}
   
-  @Get('/getHello')
-  getHello(): Promise<string> {
-    return this.userService.getHello();
-  }
+  // @Get('/getHello')
+  // getHello(): Promise<string> {
+  // return this.userService.getHello();
+  // }
 }
