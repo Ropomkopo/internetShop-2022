@@ -9,8 +9,8 @@ export class UserService {
     private userModel: Model<User>,
   ) {}
 
-  async create(createCatDto: {}): Promise<User> {
-    const createdCat = new this.userModel(createCatDto);
+  async create(createUserDto: {}): Promise<User> {
+    const createdCat = new this.userModel(createUserDto);
     return createdCat.save();
   }
   // async getHello() {
